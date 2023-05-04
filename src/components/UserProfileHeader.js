@@ -1,4 +1,5 @@
-import {Image, ImageBackground, Pressable, SafeAreaView, StyleSheet, Text, View} from "react-native";
+import {Image, ImageBackground, Pressable, StyleSheet, Text, View} from "react-native";
+import {SafeAreaView} from 'react-native-safe-area-context'
 import {useRouter} from "expo-router";
 import {FontAwesome, Ionicons} from '@expo/vector-icons';
 
@@ -13,7 +14,6 @@ const UserProfileHeader = ({user, isSubscribed, setIsSubscribed}) => {
                 <View style={styles.overlayC}/>
 
                 <SafeAreaView style={{
-                    marginTop: 50,
                     marginHorizontal: 10,
                     flexDirection: 'row',
                     alignItems: 'center',
